@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get rank number of current MPI process
-rank=$PMI_RANK
+rank=$OMPI_COMM_WORLD_NODE_RANK
 
 # distinguish...
 if [ $rank = "0" ]; then
